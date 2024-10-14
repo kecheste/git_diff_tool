@@ -13,12 +13,7 @@ Welcome to **Git Diff Tool**! A simple yet powerful command-line utility designe
 Use the following command to compare two branches of your Git repository:
 
 ```bash
-python3 diff_tool.py \
---repository="https://github.com/<username>/<repository>" \
---main-branch="main" \
---local-branch="dev" \
---save-dir="/path/to/save/diff" \
---target-folder="."
+python3 git_diff_tool.py --repository="https://github.com/<username>/<repository>" --main-branch="main" --local-branch="dev" --save-dir="/path/to/save/diff" --target-folder="."
 ```
 Parameters
 - *repository*: The URL of your Git repository. Example: https://github.com/username/repository
@@ -30,18 +25,14 @@ Parameters
 #### 2. Example Usage
 Here's an example that compares the dev branch with a feature-branch and saves the output to the /home/user/documents directory:
 ```bash
-python3 diff_tool.py --repository="https://github.com/username/sample_project" \
---main-branch="dev" \
---local-branch="feature-branch" \
---save-dir="/home/user/documents" \
---target-folder="."
+python3 git_diff_tool.py --repository="https://github.com/username/sample_project" --main-branch="dev" --local-branch="feature-branch" --save-dir="/home/user/documents" --target-folder="."
 ```
 
 #### 3. Interactive Mode
 If you don't provide some of the parameters, the tool will prompt you to input them interactively. Simply run the command without arguments and the tool will guide you through the necessary steps.
 
 ```bash
-python3 diff_tool.py
+python3 git_diff_tool.py
 ```
 You will then be asked to enter details like the repository URL, branch names, save directory, and target folder.
 This command compares the dev branch with the feature-branch and saves the differences in the specified directory.
