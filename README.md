@@ -36,6 +36,3 @@ python3 git_diff_tool.py
 ```
 You will then be asked to enter details like the repository URL, branch names, save directory, and target folder.
 This command compares the dev branch with the feature-branch and saves the differences in the specified directory.
-
-### License
-This project is licensed under the MIT License.
